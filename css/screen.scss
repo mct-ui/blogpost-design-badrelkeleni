@@ -515,6 +515,35 @@ a:active {
     Components: Author
 */
 
+.c-author{
+  display: flex;
+  align-items: center;
+  margin-bottom: $space-m;
+  gap: $space-s;
+}
+
+.c-author__image{
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+.c-author__name, .c-author__meta{
+  margin-bottom: 0;
+}
+
+.c-author__meta {
+  font-size: $ms-1;
+  font-family: $font-family-secondary;
+  line-height: $space-m;
+  margin-top: $space-xxs;
+ }
+
+ .c-author__name {
+  font-size: $ms0;
+  line-height: $space-m;
+ }
+
 /*
     Components: Quote
 */
