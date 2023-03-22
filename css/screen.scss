@@ -222,6 +222,9 @@ html {
     Default markup for typographic elements
 */
 
+h1, h2, h3{
+  color:$color-text-light;
+}
 h1 {
   font-size: $ms5;
   font-weight: 700;
