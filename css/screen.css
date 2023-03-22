@@ -7,6 +7,20 @@
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
+@font-face {
+  font-family: "Inter Web", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Web", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
 *,
 *:before,
 *:after {
@@ -36,7 +50,7 @@ img {
 html {
   font-size: 100%;
   line-height: 1.5;
-  font-family: Helvetica, arial, sans-serif;
+  font-family: "droid-serif", arial, sans-serif;
   color: hsl(198.0786026201, 10%, 30%);
   scroll-behavior: smooth;
 }
