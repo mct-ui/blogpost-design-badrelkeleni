@@ -544,6 +544,15 @@ a:active {
   line-height: $space-m;
  }
 
+ /*
+    Components: Article
+*/
+
+.c-article__header, .c-article__body{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /*
     Components: Quote
 */
