@@ -207,6 +207,10 @@ a:active {
   flex-basis: 100%;
 }
 
+.o-layout--flex-auto {
+  flex-basis: auto;
+}
+
 /* gutter modifiers, these affect o-layout__item too */
 .o-layout--gutter {
   margin-left: -0.75rem;
