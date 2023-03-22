@@ -72,6 +72,11 @@ html {
     ---
     Default markup for typographic elements
 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter Web", serif;
+  color: hsl(198.0786026201, 10%, 10%);
+}
+
 h1, h2, h3 {
   color: hsl(198.0786026201, 10%, 30%);
 }

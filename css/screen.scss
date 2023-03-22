@@ -236,6 +236,10 @@ html {
     ---
     Default markup for typographic elements
 */
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-family-secondary;
+  color: $color-text;
+}
 
 h1, h2, h3{
   color:$color-text-light;
