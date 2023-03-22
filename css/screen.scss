@@ -220,6 +220,7 @@ html {
   font-family: $font-family-primary; // global font-family
   color: $color-text-light; // global text color
   scroll-behavior: smooth; // smooth scrolling
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -257,6 +258,7 @@ h2 {
   font-size: $ms3;
   line-height: calc($baseline * 3);
   margin-bottom: $space-m;
+  font-family: $font-family-secondary;
 }
 
 h3 {
