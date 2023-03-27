@@ -1,6 +1,35 @@
 /*---------------------------------------/*
  # TOOLS
 /*---------------------------------------*/
+@media (min-width: 768px) {
+  .c-article__header {
+    padding: 48px 48px 24px;
+  }
+  .c-article__author {
+    padding-bottom: 24px;
+  }
+  .c-article__body {
+    padding: 24px 48px;
+  }
+}
+@media (min-width: 992px) {
+  .c-article__body {
+    display: flex;
+    gap: 24px;
+  }
+  .c-article__author {
+    width: 25%;
+  }
+  .c-article__content {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .c-article {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
@@ -342,6 +371,29 @@ a:active {
 /*
     Components: Author
 */
+.c-article__header {
+  padding: 1.5rem 1.5rem 0;
+}
+@media (min-width: 48.0625em) {
+  .c-article__header {
+    padding: 3rem 3rem 2rem;
+  }
+}
+
+.c-article__header,
+.c-article__body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article__header {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.c-article__body {
+  padding: 0 1.5rem;
+}
+
 .c-author {
   display: flex;
   align-items: center;
@@ -374,11 +426,6 @@ a:active {
 /*
     Components: Article
 */
-.c-article__header, .c-article__body {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /*
     Components: Quote
 */

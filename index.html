@@ -23,27 +23,32 @@
 <body>
     <article class="c-article">
         <header class="c-article__header">
-
             <p class="c-type-meta u-margin-bottom-xs"><time datetime="2023-02-17">17 februari 2023</time></p>
             <h1>Balancing Line Length And Font Size In Responsive Web Design</h1>
-
         </header>
         <figure class="c-article__image">
-            <div class="c-article__body">
-                <div class="c-author c-article__author">
-                    <aside>
+            <picture>
+                <source srcset="img/picture@2x.jpg" media="(min-width: 1200px)">
+                <source srcset="img/picture.jpg" media="(min-width: 992px)">
+                <source srcset="img/picture-medium@2x.jpg" media="(min-width: 768px)">
+                <source srcset="img/picture-medium.jpg" media="(min-width: 576px)">
+                <img src="img/picture-square@2x.jpg" alt="Picture of girl reading on a tablet">
+               </picture>
+        </figure>
+        <div class="c-article__body">
+            <div class="c-article__author">
+                <figure class="c-author">
                     <img class="c-author__image" src="img/avatar.jpg" alt="Simon Coudeville">
-                        <div class="c-author__caption">
-                        <h2 class="c-author__name">Simon Coudeville</h2>
+                    <div class="c-author__caption">
+                        <h3 class="c-author__name">Simon Coudeville</h3>
                         <p class="c-author__meta">
                             User Interface Designer
                         </p>
-                        </div>
-                    </aside>
-                </div>
+                    </div>
+                </figure>
             </div>
-        </figure>
-        <div class="s-content c-article__content">
+        <div class="c-article__content">
+            <div class="s-content u-max-width-s">
             <p>
                 As we refine our methods of responsive web design,* we’ve increasingly focus*ed on measure
                 (another word for “line length”) and its relationship to how people read. The popularization of
@@ -96,6 +101,8 @@
                 left-aligned text. He argued that this would assist readers by providing a consistent left
                 (vertical) edge for the eye to return to after finishing each (horizontal) line.
             </p>
+        </div>
+        </div>
         </div>
     </article>
 </body>
