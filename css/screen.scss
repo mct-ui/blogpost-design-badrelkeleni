@@ -1,7 +1,6 @@
 /*---------------------------------------/*
  # TOOLS
 /*---------------------------------------*/
-
 // a function to get the color from the palette
 @function get-color($palette, $color) {
   @return map-get(map-get($palettes, $palette), $color);
@@ -38,9 +37,22 @@
 }
 
 @media (min-width: 992px) {
-  .c-article {
+  .c-author {
     flex-direction: column;
     align-items: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-article__title {
+    align-items: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-article__title {
+    display: flex;
+    gap: 24px;
   }
 }
 
@@ -216,11 +228,21 @@ $columns: (2, 3, 4, 5, 6) !default;
   src: url("../fonts/Inter-Bold.woff2") format("woff2");
 }
 
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Droid Serif", Georgia, serif;
+  color: #5C6366;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
   // Reset box-sizing
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 * {
@@ -547,6 +569,16 @@ a:active {
     Components: Author
 */
 
+.c-quote {
+  padding: 24px 48px 48px;
+  margin: 24px 24px 24px;
+}
+
+.c-article__title {
+  font-size: 900;
+  font-weight: 750;
+}
+
 .c-article__header{
   padding: $space-m $space-m 0;
   
@@ -601,6 +633,11 @@ a:active {
  /*
     Components: Article
 */
+
+.c-article__date {
+  font-size: 400;
+  font-weight: 600;
+}
 
 /*
     Components: Quote
